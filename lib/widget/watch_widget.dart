@@ -10,15 +10,22 @@ class WatchWidget extends StatefulWidget {
 
 class _WatchWidgetState extends State<WatchWidget> {
   DateTime _time = DateTime.now();
+  Timer _timer;
 
   @override
   void initState() {
     super.initState();
-    Timer.periodic(Duration(seconds: 1), (Timer t) {
+    _timer = Timer.periodic(Duration(seconds: 1), (Timer t) {
       setState(() {
         _time = DateTime.now();
       });
     });
+  }
+
+  @override
+  void dispose() {
+    _timer.cancel();
+    super.dispose();
   }
 
   @override
@@ -39,8 +46,9 @@ class _WatchPainter extends CustomPainter {
     final paint = Paint();
     paint.color = Colors.black;
     double width = size.width / 2;
+    double height = size.height / 2;
     double radius = width - 50;
-    var center = Offset(width, width);
+    var center = Offset(width, height);
     canvas.drawCircle(center, radius, paint);
 
     int second = _time.second;
