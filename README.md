@@ -2,6 +2,11 @@
 
 A new beautiful Flutter application.
 
+## screenshot
+
+![watch.gif](gif/watch.gif)
+
+
 ## Getting Started
 
 This project is a starting point for a Flutter application.
