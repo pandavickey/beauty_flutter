@@ -20,20 +20,22 @@ class _HomePageState extends State<HomePageWidget> {
       body: DefaultTabController(
         length: 4,
         initialIndex: 0,
-        child: new Column(
-          crossAxisAlignment: CrossAxisAlignment.center,
+        child: new Stack(
           children: <Widget>[
-            new Expanded(
-              child: TabBarView(
-                children: [
-                  new WatchPageWidget(),
-                  new WeatherPageWidget(),
-                  new CalculatorPageWidget(),
-                  new DiaryPageWidget(),
-                ],
-              ),
+            TabBarView(
+              children: [
+                new WatchPageWidget(),
+                new WeatherPageWidget(),
+                new CalculatorPageWidget(),
+                new DiaryPageWidget(),
+              ],
             ),
-            new _BottomIndicatorWidget(),
+            new Column(
+              children: <Widget>[
+                new Expanded(child: new Container()),
+                new _BottomIndicatorWidget(),
+              ],
+            )
           ],
         ),
       ),
