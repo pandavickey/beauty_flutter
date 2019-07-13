@@ -189,7 +189,7 @@ class _WeatherPageWidgetState extends State<WeatherPageWidget> {
                 height: 20,
               ),
               new Image.asset(
-                'image/ic_weather.png',
+                'image/ic_sunshine.png',
                 width: 30,
                 height: 30,
               ),
@@ -244,7 +244,7 @@ class _WeatherPageWidgetState extends State<WeatherPageWidget> {
                 ),
                 new Expanded(
                     child: new Image.asset(
-                  'image/ic_weather.png',
+                  'image/ic_sunshine.png',
                   width: 30,
                   height: 20,
                 )),

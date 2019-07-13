@@ -41,7 +41,7 @@ flutter:
   uses-material-design: true
   assets:
     - image/ic_location.png
-    - image/ic_weather.png
+    - image/ic_sunshine.png
     - image/ic_ruler.png
     - image/ic_chinese_number.png
     - image/ic_dynamometer.png
@@ -57,6 +57,10 @@ flutter:
     - image/ic_density.png
     - image/ic_power.png
     - image/ic_byte.png
+    - image/ic_notepad.png
+    - image/ic_calculator.png
+    - image/ic_weather.png
+    - image/ic_clock.png
 
   # To add assets to your application, add an assets section, like this:
   # assets:

@@ -1,6 +1,6 @@
 import 'package:beauty_flutter/page/watch_page.dart';
 import 'package:beauty_flutter/page/weather_page.dart';
-import 'package:beauty_flutter/utils/ThemesUtils.dart';
+import 'package:beauty_flutter/utils/themes_util.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
@@ -33,7 +33,14 @@ class _HomePageState extends State<HomePageWidget> {
             new Column(
               children: <Widget>[
                 new Expanded(child: new Container()),
-                new _BottomIndicatorWidget(),
+                new Container(
+                  padding: EdgeInsets.only(
+                    top: 10,
+                    bottom: 10,
+                  ),
+                  color: Colors.white,
+                  child: _buildBottomIndicatorWidget(),
+                )
               ],
             )
           ],
@@ -41,34 +48,65 @@ class _HomePageState extends State<HomePageWidget> {
       ),
     );
   }
-}
 
-class _BottomIndicatorWidget extends StatefulWidget {
-  @override
-  State<StatefulWidget> createState() => new _BottomIndicatorState();
-}
-
-class _BottomIndicatorState extends State<_BottomIndicatorWidget> {
-  @override
-  Widget build(BuildContext context) {
+  Widget _buildBottomIndicatorWidget() {
     return new TabBar(
-      indicatorColor: ColorUtils.THEME,
-      indicatorSize: TabBarIndicatorSize.label,
+      indicator: null,
+      indicatorColor: Colors.white,
       labelColor: ColorUtils.THEME,
       unselectedLabelColor: ColorUtils.GREY_9E9,
-      indicatorWeight: 3.0,
       tabs: [
-        Tab(
-          text: "时钟",
+        new Column(
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: <Widget>[
+            Icon(
+              Icons.timer,
+              size: 25,
+            ),
+            Text(
+              "时钟",
+              style: TextStyle(fontSize: 14),
+            ),
+          ],
         ),
-        Tab(
-          text: "天气",
+        new Column(
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: <Widget>[
+            Icon(
+              Icons.wb_cloudy,
+              size: 25,
+            ),
+            Text(
+              "天气",
+              style: TextStyle(fontSize: 14),
+            ),
+          ],
         ),
-        Tab(
-          text: "换算",
+        new Column(
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: <Widget>[
+            Icon(
+              Icons.all_inclusive,
+              size: 25,
+            ),
+            Text(
+              "换算",
+              style: TextStyle(fontSize: 14),
+            ),
+          ],
         ),
-        Tab(
-          text: "日记",
+        new Column(
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: <Widget>[
+            Icon(
+              Icons.bookmark,
+              size: 25,
+            ),
+            Text(
+              "日记",
+              style: TextStyle(fontSize: 14),
+            ),
+          ],
         ),
       ],
     );

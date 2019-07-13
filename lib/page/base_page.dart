@@ -1,5 +1,5 @@
-import 'package:beauty_flutter/utils/NavigatorUtils.dart';
-import 'package:beauty_flutter/utils/ThemesUtils.dart';
+import 'package:beauty_flutter/utils/navigator_util.dart';
+import 'package:beauty_flutter/utils/themes_util.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
