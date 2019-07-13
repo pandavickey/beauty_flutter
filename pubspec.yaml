@@ -42,6 +42,21 @@ flutter:
   assets:
     - image/ic_location.png
     - image/ic_weather.png
+    - image/ic_ruler.png
+    - image/ic_chinese_number.png
+    - image/ic_dynamometer.png
+    - image/ic_pressure.png
+    - image/ic_weight.png
+    - image/ic_angle.png
+    - image/ic_speed.png
+    - image/ic_temperature.png
+    - image/ic_time.png
+    - image/ic_three_dimensions.png
+    - image/ic_area.png
+    - image/ic_heat.png
+    - image/ic_density.png
+    - image/ic_power.png
+    - image/ic_byte.png
 
   # To add assets to your application, add an assets section, like this:
   # assets:

@@ -65,10 +65,10 @@ class _BottomIndicatorState extends State<_BottomIndicatorWidget> {
           text: "天气",
         ),
         Tab(
-          text: "计算器",
+          text: "换算",
         ),
         Tab(
-          text: "笔记本",
+          text: "日记",
         ),
       ],
     );
