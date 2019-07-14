@@ -9,4 +9,5 @@ class ColorUtils {
   static const Color WHITE = const Color(0xFFFFFFFF);
   static const Color TRANSPARENT = const Color(0x00000000);
   static const Color GREY_9E9 = const Color(0xFF9E9E9E);
+  static const Color MIDNIGHT_BLUE = const Color(0xFF38455C);
 }

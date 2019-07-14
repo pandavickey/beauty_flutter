@@ -61,6 +61,7 @@ flutter:
     - image/ic_calculator.png
     - image/ic_weather.png
     - image/ic_clock.png
+    - image/ic_upward.png
 
   # To add assets to your application, add an assets section, like this:
   # assets:

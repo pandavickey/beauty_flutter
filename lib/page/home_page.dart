@@ -4,7 +4,7 @@ import 'package:beauty_flutter/utils/themes_util.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
-import 'calculator_page.dart';
+import 'calculator_list_page.dart';
 import 'diary_page.dart';
 
 class HomePageWidget extends StatefulWidget {

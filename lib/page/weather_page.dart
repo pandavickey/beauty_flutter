@@ -161,6 +161,7 @@ class _WeatherPageWidgetState extends State<WeatherPageWidget> {
                   ),
                 ),
                 _generateWeatherDateList(),
+                new Container(height: 30),
               ],
             ),
           )),
@@ -214,8 +215,11 @@ class _WeatherPageWidgetState extends State<WeatherPageWidget> {
         right: 20,
         top: 20,
       ),
-      child: new Row(
-        children: children,
+      child: SingleChildScrollView(
+        scrollDirection: Axis.horizontal,
+        child: new Row(
+          children: children,
+        ),
       ),
     );
   }
