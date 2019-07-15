@@ -59,6 +59,87 @@ class _CalculatorDetailPageState extends State<CalculatorDetailPage> {
                 ),
               ),
             )),
+        Container(
+          margin: EdgeInsets.only(
+            top: 60,
+            left: 20,
+          ),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: <Widget>[
+              Text(
+                '当前换算单位',
+                style: TextStyle(
+                  fontSize: 14,
+                  color: Colors.white54,
+                ),
+              ),
+              Text(
+                '小时(h)',
+                style: TextStyle(
+                  fontSize: 18,
+                  color: Colors.white,
+                ),
+              ),
+              Container(
+                height: 5,
+              ),
+              Image.asset(
+                'image/ic_setting.png',
+                height: 24,
+                width: 24,
+              ),
+            ],
+          ),
+        ),
+        Align(
+          alignment: Alignment.topRight,
+          child: Container(
+            margin: EdgeInsets.only(
+              top: 60,
+              right: 20,
+            ),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.end,
+              children: <Widget>[
+                Text(
+                  '目标换算单位',
+                  style: TextStyle(
+                    fontSize: 14,
+                    color: Colors.white54,
+                  ),
+                ),
+                Text(
+                  '分钟(min)',
+                  style: TextStyle(
+                    fontSize: 18,
+                    color: Colors.white,
+                  ),
+                ),
+                Container(
+                  height: 5,
+                ),
+                Image.asset(
+                  'image/ic_setting.png',
+                  height: 24,
+                  width: 24,
+                ),
+              ],
+            ),
+          ),
+        ),
+        Align(
+          alignment: Alignment.center,
+          child: Container(
+            margin: EdgeInsets.only(
+              top: 50,
+              bottom: 50,
+            ),
+            width: 1,
+            height: double.infinity,
+            color: Colors.white30,
+          ),
+        ),
       ],
     );
   }

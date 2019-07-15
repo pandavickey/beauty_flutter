@@ -32,6 +32,9 @@ class _CalculatorPageWidgetState extends State<CalculatorPageWidget> {
               children: _generateCalculatorWidgets(),
             ),
           ),
+          Container(
+            height: 60,
+          ),
           Hero(
             tag: 'cal_hero_bottom',
             child: Container(),
